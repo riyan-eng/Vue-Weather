@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <main>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="Search...">
+      </div>
+    </main>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      api_key: 'cbdc944da655df89dcb1b4f39edcd209'
+    }
   }
 }
 </script>
